@@ -2,7 +2,11 @@ import React, { Component } from "react";
 
 class Home extends Component {
   render() {
-    return <h1>Welcome To The Best Organic Store Online</h1>;
+    return;
+    <div>
+      <h1>Welcome To The Best OrganiKa Store Online</h1>
+      <h3>Free Shipping!</h3>
+    </div>;
   }
 }
 
