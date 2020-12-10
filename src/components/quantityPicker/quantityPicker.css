@@ -1,0 +1,15 @@
+.qntPicker button {
+    display: inline-block;
+    margin: 10px 10px;
+
+}
+
+.qntPicker label {
+    font-weight: bold;
+    color: orange;
+
+}
+
+.qntPicker {
+    display: inline-block;
+}

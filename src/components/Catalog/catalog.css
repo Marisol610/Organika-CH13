@@ -1,0 +1,22 @@
+.btn-category {
+
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    vertical-align: top;
+    width: 170px;
+    height: 50px;
+    background-color: rgb(67, 5, 80);
+    border: 3px solid orange;
+    border-style: groove;
+    margin-top: 5rem;
+    margin-bottom: 45px;
+    margin-right: 40px;
+    padding-top: 9px;
+    box-shadow: -1px 1px 3px 4px #e4d4d4;
+}
+
+.btn-category:hover {
+    cursor: pointer;
+}
