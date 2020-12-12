@@ -3,6 +3,7 @@ import Product from "../product/product";
 import ProductService from "../../services/productService";
 
 import "./catalog.css";
+import Cart from "../cart/cart";
 
 class Catalog extends Component {
   state = {

@@ -2,12 +2,12 @@ import React, { Component } from "react";
 
 class Home extends Component {
   render() {
-    return;
-    <div>
-      <h1>Welcome To The Best OrganiKa Store Online</h1>
-      <h3>Free Shipping!</h3>
-    </div>;
+    return (
+      <div>
+        <h1>Welcome To The Best OrganiKa Store Online</h1>
+        <h3>Free Shipping!</h3>
+      </div>
+    );
   }
 }
-
 export default Home;

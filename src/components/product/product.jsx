@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import QuantityPicker from "../quantityPicker/quantityPicker";
 import "./product.css";
+import { increaseCounter, addProductToCart } from "../../store/actions/actions";
 
 class Product extends Component {
   state = {
@@ -11,26 +13,35 @@ class Product extends Component {
     return (
       <div className="product">
         <img src={"/images/products/" + this.props.data.image} alt="" />
-
         <h4>{this.props.data.title}</h4>
-
         <div className="price">
           <label className="total-value">${this.getTotal()}</label>
           <label className="price-value">
             ${this.props.data.price.toFixed(2)}
           </label>
         </div>
-
         <div className="picker">
           <QuantityPicker
             onValueChange={(qnty) => this.handleQuantityChange(qnty)}
           ></QuantityPicker>
         </div>
-
+        onClick={this.addProduct}
         <button className="btn btn-primary">Add</button>
       </div>
     );
   }
+  addProduct = () => {
+    console.log("Dispatching action");
+    this.props.increaseCounter();
+
+    var addedProduct = {
+      // create an object
+      product: this.props.data,
+      quantity: this.state.quantity,
+    };
+
+    this.props.addProductToCart(addedProduct);
+  };
 
   getTotal = () => {
     return (this.props.data.price * this.state.quantity).toFixed(2);
@@ -40,5 +51,7 @@ class Product extends Component {
     this.setState({ quantity: qnty });
   };
 }
-
-export default Product;
+// 2parameters to connect
+// 1st: function that maps the properties to read from the strore
+// 2nd : a list of acions you want to dispatch
+export default connect(null, { increaseCounter, addProductToCart })(Product);
