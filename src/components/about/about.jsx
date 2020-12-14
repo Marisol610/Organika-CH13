@@ -10,7 +10,7 @@ class About extends Component {
         <h1 className="display-4">Marisol Rodriguez</h1>
 
         <p className="Lead">
-          Contact me via email so we can discuss your future projects.
+          Contact us via e-mail so we can discuss your future projects.
         </p>
 
         {this.getEmailText()}
