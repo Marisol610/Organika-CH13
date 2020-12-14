@@ -25,7 +25,7 @@ class About extends Component {
   }
 
   handleBtnClick = () => {
-    this.state({ isEmailVisible: true });
+    this.setState({ isEmailVisible: true });
     //timer to hide it back
     setTimeout(() => {
       this.setState({ isEmailVisible: false });

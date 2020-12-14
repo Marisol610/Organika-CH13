@@ -1,10 +1,6 @@
-const { combineReducers } = require("redux");
-
 import cartCounterReducer from "./cartCounter";
 import cartProductReducer from "./cartProduct";
-
-const { default: cart } = require("../../components/cart/cart");
-
+const { combineReducers } = require("redux");
 // the idea is to combine all the redicers into one
 const rootReducer = combineReducers({
   count: cartCounterReducer, // slice
