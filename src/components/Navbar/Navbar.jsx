@@ -11,7 +11,7 @@ class Navbar extends Component {
         className="navbar navbar-expand-lg navbar-dark"
         style={{ backgroundColor: "rgb(44, 8, 25)" }}
       >
-        <Link className="navbar-brand" href="/#">
+        <Link className="navbar-brand" to="/#">
           Navbar
         </Link>
         <button
@@ -49,7 +49,6 @@ class Navbar extends Component {
             <Link className="btn btn-outline-info my-2 my-sm-0" to="/cart">
               <i className="fa fa-shopping-cart"> View Cart</i>
             </Link>
-            <i>View Cart</i>
           </form>
         </div>
       </nav>

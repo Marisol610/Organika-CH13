@@ -1,6 +1,10 @@
 .App {
   text-align: center;
-  background-color: rgb(7, 70, 56);
+  background-color: rgb(64, 6, 87);
+
+
+
+
 }
 
 h1 {
@@ -12,6 +16,11 @@ h1 {
 h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: orange;
+}
+
+
+.footer label {
+  color: white;
 }
 
 .App-logo {

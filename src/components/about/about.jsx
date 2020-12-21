@@ -38,7 +38,7 @@ class About extends Component {
         <a href="mailto:marisol_rodriguez43@yahoo.com">contact@marisol.com</a>
       );
     } else {
-      return <h6>Click on the button to view email address</h6>;
+      return <h6>Click on the button to view e-mail address</h6>;
     }
   };
 }

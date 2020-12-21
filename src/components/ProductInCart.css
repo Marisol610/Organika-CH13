@@ -1,0 +1,90 @@
+.cart {
+    background-color: rgb(240, 163, 119);
+
+}
+
+.product-title {
+    display: inline-block;
+
+
+
+}
+
+.cart-msg h6 {
+    color: white;
+}
+
+.qty h1 {
+    color: indigo;
+    font-size: 30px;
+}
+
+.qty {
+    display: inline-block;
+    color: black;
+    font-size: 15px;
+    width: 300px;
+}
+
+.qty label {
+    width: 315px;
+
+}
+
+.product-img {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    background-color: rgb(67, 5, 80);
+    padding: 30px;
+    margin-right: 45px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    box-shadow: -1px 1px 3px 4px #e4d4d4
+}
+
+.product-img img {
+    display: inline-block;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    border-style: double;
+
+}
+
+.price-section {
+    display: inline-block;
+    vertical-align: -250%;
+
+}
+
+.product-title h5 {
+    font-size: 25px;
+    color: rgb(124, 7, 56);
+    margin-right: 10px;
+    padding-top: 30px;
+}
+
+.total-section {
+    padding-left: 480px;
+    padding-top: 15px;
+    vertical-align: top;
+}
+
+label {
+    color: indigo;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    margin-right: 10px;
+    padding-right: 20px;
+
+}
+
+.delete-btn {
+    display: inline-block;
+    margin-bottom: 8px;
+    background-color: rgb(238, 11, 11);
+    color: rgb(240, 255, 240);
+}

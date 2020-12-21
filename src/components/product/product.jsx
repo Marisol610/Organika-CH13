@@ -12,7 +12,7 @@ class Product extends Component {
   render() {
     return (
       <div className="product">
-        <img src={"/images/products/" + this.props.data.image} alt="" />
+        <img src={"/images/products/" + this.props.data.image} alt=""></img>
         <h4>{this.props.data.title}</h4>
         <div className="price">
           <label className="total-value">${this.getTotal()}</label>
@@ -25,8 +25,11 @@ class Product extends Component {
             onValueChange={(qnty) => this.handleQuantityChange(qnty)}
           ></QuantityPicker>
         </div>
-        onClick={this.addProduct}
-        <button className="btn btn-primary">Add</button>
+        <div className=" addbtn">
+          <button onClick={this.addProduct} className="btn btn-primary">
+            Add
+          </button>
+        </div>
       </div>
     );
   }

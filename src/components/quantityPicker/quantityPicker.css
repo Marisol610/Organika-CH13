@@ -1,12 +1,15 @@
 .qntPicker button {
     display: inline-block;
     margin: 10px 10px;
+    color: orange;
+    background-color: papayawhip;
 
 }
 
 .qntPicker label {
     font-weight: bold;
     color: orange;
+
 
 }
 
